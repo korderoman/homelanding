@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Henrys';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../assets/fonts/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../assets/fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Extra';
+    src: url('../assets/fonts/static/Inter-ExtraBold.ttf');
+}
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Inter-Regular';
+    
+}
+
+
+
+.logo{
+    font-size: 36px ;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+.navbar_desktop{
+    display: none;
+}
+.navbar_mobile img{
+    width: 40px;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+}
+.main_content-article{
+    display: flex;
+    flex-direction: column;
+}
+
+.main_content-image_mobile{
+    width: 100%;
+}
+.main_content-image_desktop{
+    display: none;
+}
+.main_content-body{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main_content-body_title{
+    font-size: 40px;
+    font-family: 'Inter-Bold';
+}
+.main_content-body_resume{
+    margin-top: 20px;
+    font-family: 'Inter-Regular';
+    line-height: 30px;
+    text-align: justify;
+}
+.main_content-body_button{
+    font-family: 'Inter-Bold';
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color:#db6a62 ;
+}
+
+.main_content-aside{
+    margin-top: 50px;
+    background-color: #00011a;
+    padding: 20px;
+}
+.main_content-aside_title{
+    font-size: 40px;
+    color: #e5a848;
+    font-family: 'Inter-Bold';
+}
+.main_content-aside_articles{
+    margin-top: 20px;
+}
+
+.article-title{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Inter-Bold';
+    font-size: 16px;
+}
+
+.article-content{
+    font-family: 'Inter-Regular';
+    margin-top: 10px;
+    color: white;
+    text-align: justify;
+}
+.article-line{
+    margin-top: 30px;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.posts_card{
+    margin-bottom: 30px;
+    display: flex;
+}
+.posts_card img{
+    margin-right: 20px;
+    width: 30%;
+}
+.posts_card-number{
+    color: #c8c5cc;
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+
+}
+.posts_card-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Inter-Bold';
+}
+.posts_card-resume{
+    line-height: 30px;
+    color: #bdbac2;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    body{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .navbar_mobile{
+        display: none;
+    }
+    .navbar_desktop{
+        display: flex;
+        list-style-type: none;
+    }
+    .navbar_desktop li{
+        padding-left: 20px;
+    }
+    .navbar_desktop li:hover{
+        cursor: pointer;
+    }
+
+    .main_content{
+        flex-direction: row;
+        align-items: start;
+    }
+    .main_content-body{
+        flex-direction: row;;
+        align-items: start;
+    }
+    .main_content-image_mobile{
+        display: none;
+    }
+    .main_content-image_desktop{
+        display: flex;
+    }
+    .main_content-image_desktop{
+        width: 100%;
+    }
+    .main_content-aside{
+        margin-top: 0px;
+        margin-left: 30px;
+        min-height: 700px;
+
+    }
+    .main_content-aside_articles{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 600px;
+    }
+   
+    .main_content-body_title{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .main_content-body_resume{
+        margin-top: 0px;
+    }
+    .posts{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-title{
+        font-size: 32px;
+    }
+    .article-content{
+        font-size: 24px;
+    }
+    .posts_card img{
+        max-height: 120px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { }
+
+
+
